@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/43eb8c3da5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-code"></i> Services</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="cols col0">
+                    <span class="topline">Hello, I'm</span>
+                    <h1> Anupam Vaishy</h1>
+                    <h1>A <span class="multiText"></span> </h1>
+                    <p>I have working experience in various technology like full stack development in java, nodejs Building projects with end-to-end technology, Work experience in Blockchain development, and building projects using a different framework.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- ----------------------------------------------------------------------about---------------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/user.png"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I have working experience in various technology like full stack development in java, nodejs Building projects with end-to-end technology, Work experience in Blockchain development, and building projects using a different framework. </p>
+                    <div class="tab-titles ">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- ------------------------------------SKILLS------------------------------------------- -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Development</span><br />Works on both client-side and server-side of the software application</li>
+                            <li>
+                                <span>Nodejs Development</span><br /> Writes server-side web applications using JavaScript and/or JavaScript variants
+                            </li>
+                            <li><span>MySQL</span><br />Creates a database and writes SQL queries by using SQL programs</li>
+                        </ul>
+                    </div>
+                    <!-- <div class=" skills section tab-contents active-tab" id="skills">
+                        <div>
+                            <h2 class="section__title">My Technical Skills</h2><span class="section__subtitles">As i am a Fullstack Developer So i have solid grasp of fundamental frontend technologies like HTML, CSS, JavaScript and I use React and Angular to develop a single-page frontend application,jQuery for functionalities.
+                                Also I learned Java SE, Java EE ,Spring Boot MVC, JDBC, Mysql and implemented them in my full stack ojects but i dont't have any professional experience in this. For backend, I use MySQL DataBase And Rest API for URL breakpoint connection, also learning about the NOSQL backend enviroment. Also i have good command in Nodejs developement and Express framework. Before a developer I am a Programmer at the first place i can program in java also learned C/CPP but nowadays not making use of it. 
+                        
+                            </span></div>
+
+
+                        <div class="skills__container container grid">
+                            <div>
+                                ========================skills1=======================
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="fa-regular fa-display-code"></i>
+                            <div>
+                                <h1 class="skills__title"> Frontend Developement</h1><span class="skills__subtitle">More than 2 year</span>
+                            </div>
+                            <i class="fa-solid fa-angle-down skills__arrow"></i> 
+
+                </div>
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">HTML </h3><span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar"><span class="skills__percentage skills__html"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">CSS </h3><span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar"><span class="skills__percentage skills__css"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">JavaScript </h3><span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar"><span class="skills__percentage skills__js"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">React </h3><span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar"><span class="skills__percentage skills__react"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ========================skills2=======================
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <div>
+                                <h1 class="skills__title"> Backend Developement</h1><span class="skills__subtitle">More than 1 year</span></div>
+                             <i class="fa-solid fa-angle-down skills__arrow"></i> 
+                </div>
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">MySQL </h3><span class="skills__number">45%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__mysql"></span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Nodejs </h3><span class="skills__number">70%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__nodejs"></span></div>
+                    </div>
+                </div>
+            </div>
+            ========================skills3=======================
+                    <div class="skills__content skills__close">
+                        <div class="skills__header"><i class="fa-solid fa-brackets-curly skills_icon"></i>
+                            <div>
+                                <h1 class="skills__title">Programming language</h1><span class="skills__subtitle">More than 1 year</span>
+                            </div>
+                           <i class="fa-solid fa-angle-down skills__arrow"></i>
+                </div>
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Java </h3><span class="skills__number">90%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__java"></span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">C++</h3><span class="skills__number">80%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__cpp"></span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">c </h3><span class="skills__number">70%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__c"></span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">TypeScript </h3><span class="skills__number">70%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__typescript"></span></div>
+                    </div>
+                </div>
+            </div>
+           ========================skills4=======================
+                    <div class="skills__content skills__close">
+                        <div class="skills__header"><i class="fa-solid fa-chart-network skill__icon"></i>
+                            <div>
+                                <h1 class="skills__title">framework</h1><span class="skills__subtitle">More than 1 year</span>
+                            </div>
+                            <i class="fa-solid fa-angle-down skills__arrow"></i> 
+                </div>
+                <div class="skills__list grid">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Angular </h3><span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <span class="skills__percentage skills__angular"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">J Query </h3><span class="skills__number">80%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__jquery"></span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Bootstap </h3><span class="skills__number">70%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__bootstrap"></span></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Express </h3><span class="skills__number">30%</span></div>
+                        <div class="skills__bar"><span class="skills__percentage skills__express"></span></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div> -->
+                    <!-- ------------------------------------PROJECTS------------------------------------------- -->
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>The Tech Quiz App (08/2020 - 03/2021)</span><br />
+                                <li>This is a Desktop-Based Application in Java.</li>
+                                <li>This Application conducts a quiz in a school or college.</li>
+                                <li>Working knowledge of Object-Oriented Development and core java.</li>
+                                <li>Providing expertise in different technologies like JDBC, Core Java Development, Oracle, etc.</li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>Vote4Change (09/2021 - 02/2022)</span><br />
+                                <li>This Full Stack Web-Developement project.</li>
+                                <li>To maintain social distancing we working on this online voting system. </li>
+                                <li>Through this application people can cast their votes.</li>
+                                <li>Providing expertise in different technologies like JSPServlets, Apache Tomcat, SQL, REST, DAO architecture.</li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><span>Employe Management System (06/2020 - 07/2020) </span><br />
+                                <li>This is a mini project which we develop to undersanding the key features of DBMS.</li>
+                                <li>This Application perform CRUD Operation.</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ------------------------------------EXPERIENCE------------------------------------------- -->
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>Full Stack Development</span><br />Works on both client-side and server-side of the software application</li>
+                            <li>
+                                <span>Nodejs Development</span><br /> Writes server-side web applications using JavaScript and/or JavaScript variants
+                            </li>
+                            <li><span>MySQL</span><br />Creates a database and writes SQL queries by using SQL programs</li>
+                        </ul>
+                    </div>
+                    <!-- ------------------------------------EDUCATION------------------------------------------- -->
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>MATRICULATION (07/2015 - 05/2016)</span><br />
+                                <h4>Wisdom Public Higher Secondary School<br />
+                                    <h5>Percentage-68.18 </h5>
+                            </li>
+                            <li><span>INTERMEDIATE
+                                (07/2017 - 05/2018)</span><br />
+                                <h4>Wisdom Public Higher Secondary School<br />
+                                    <h5>Percentage-66.80 </h5>
+
+
+                                </h4>
+                            </li>
+                            <li><span>Bachelor of Technology(IT) (08/2018 - 05/2022)</span><br />
+                                <h4>Sagar Institute of Research and Technology - [SIRT], Bhopal<br />
+                                    <h5>CGPA - 7.64</h5>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------Services--------------------------------------------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class=" sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <h2>Nodejs Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates obcaecati, quidem dolores corrupti quo animi, totam cumque saepe, dicta consectetur quia vel blanditiis in illo quisquam. Unde iste consequatur dolores, doloribus
+                        voluptatibus adipisci.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates obcaecati, quidem dolores corrupti quo animi, totam cumque saepe, dicta consectetur quia vel blanditiis in illo quisquam. Unde iste consequatur dolores, doloribus
+                        voluptatibus adipisci.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web-Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates obcaecati, quidem dolores corrupti quo animi, totam cumque saepe, dicta consectetur quia vel blanditiis in illo quisquam. Unde iste consequatur dolores, doloribus
+                        voluptatibus adipisci.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------My Work--------------------------------------------------------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connect you to the talent people around the world.Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Todo List App</h3>
+                        <p>A to-do list app in Angular is a simple application that allows users to create, view, and manage a list of tasks or to-do items. The app provides a user interface that lets the user interact with the list, add new items, edit
+                            existing ones, and mark completed items as done.</p>
+                        <a href="http://anupam-todolist.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Vote4Change App</h3>
+                        <p>The app connect you to the talent people around the world.Download it from play store.</p>
+                        <a href="http://anupam-todolist.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------My contact--------------------------------------------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>anupamvaishyofficial@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7974078836</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/anupamvaishy2001/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AnupamVaishy1207"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/anupamvaishy101/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/Anupam's Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="E-Mail" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 PortFolio | All rights reserved <br><i class="fa-solid fa-heart"></i></i> by Anupam Vaishy</p>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------Scroll top--------------------------------------------------------------------------------- -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!-- ----------------------------------------------------------------------Scripts--------------------------------------------------------------------------------- -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["Web-Developer", "Java-Developer", "Nodejs-Developer", "Coder", "Web-developer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+
+        })
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfRQgSZgZOzRXe59HFrlZh_4icFDyJzVPmdduBlYgyoRQ0VBqrVyCWE6QkegCrJwoZ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        constmsg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+
+
+
+
+
+
+
+
+
+
+
+
+
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        const skillsContent = document0.getElementsByClassName('skills__content'),
+            skillsHeader = document.querySelectorAll('.skills__header')
+
+        function toggleSkills() {
+            let itemClass = this.parentNode.ClassName
+            for (i = 0; i < skillsContent.length; i++) {
+                skillsContent[i].className = 'skills__content skills__close'
+            }
+            if (itemClass === 'skills__content skills__close') {
+                this.parentNode.className = 'skills__content skills__open'
+            }
+        }
+        skillsHeader.forEach((eL) => {
+            el.addEventListener('click', toggleSkills)
+        })
+    </script>
+
+</body>
+
+</html>
